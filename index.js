@@ -21,10 +21,12 @@ const dialogflowFulfilment = (request, response) => {
 
   const welcome = agent => agent.add(responsesJSON.welcome)
   const fallback = agent => agent.add(responsesJSON.fallback);
+  const localization = agent => agent.add(responsesJSON.localization);
   
   const intentMap = new Map();
   intentMap.set("Default Welcome Intent", welcome);
   intentMap.set("Default Fallback Intent", fallback);
+  intentMap.set("Localização Intent", localization);
   agent.handleRequest(intentMap);
 };
 
