@@ -1,5 +1,5 @@
 {
   "welcome": "Olá, bem vindo(a) ao chat, sou uma Inteligência Artificial da Limpexo Serviços e Produtos de limpeza, o que posso te ajudar hoje?",
   "fallback": "Não consegui entender, você poderia reformular a pergunta?",
-  "location": "A loja está localizada em São José dos Pinhais, na Rua Almirante Alexandrino, 2216. Venha nos fazer uma visita!"
+  "localization": "A loja está localizada em São José dos Pinhais, na Rua Almirante Alexandrino, 2216. Venha nos fazer uma visita!"
 }
