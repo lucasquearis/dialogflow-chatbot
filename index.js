@@ -1,5 +1,6 @@
 const express = require("express");
 const { WebhookClient } = require("dialogflow-fulfillment");
+const responsesJSON = require('./responses.json')
 
 const app = express();
 app.use(express.json());
@@ -18,13 +19,10 @@ app.get("/", (request, response) =>
 const dialogflowFulfilment = (request, response) => {
   const agent = new WebhookClient({ request, response });
 
-  function statusPedido(agent) {
-    const idPedido = Math.floor(Math.random() * (1000 - 1) + 1);
-    agent.add("Olá, seu pedido " + idPedido + " já foi enviado!");
-  }
-
+  const welcome = agent => agent.add(responsesJSON.welcome)
+  
   const intentMap = new Map();
-  intentMap.set("Status Pedido Intent", statusPedido);
+  intentMap.set("Default Welcome Intent", welcome);
   agent.handleRequest(intentMap);
 };
 
