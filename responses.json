@@ -1,5 +1,8 @@
 {
   "welcome": "Olá, bem vindo(a) ao chat, sou uma Inteligência Artificial da Limpexo Serviços e Produtos de limpeza, o que posso te ajudar hoje?",
   "fallback": "Não consegui entender, você poderia reformular a pergunta?",
-  "localization": "A loja está localizada em São José dos Pinhais, na Rua Almirante Alexandrino, 2216. Venha nos fazer uma visita!"
+  "localization": "A loja está localizada em São José dos Pinhais, na Rua Almirante Alexandrino, 2216. Venha nos fazer uma visita!",
+  "products": "Vendemos diversos produtos de limpeza, sejam eles domésticos ou profissionais, aqui temos a solução para qualquer dificuldade de limpeza, temos diversos produtos para ajudarmos na sua dificuldade. Também oferecemos serviços profissionais para sua casa ou estabelecimento, marque já um orçamento.",
+  "services": "Contamos com um excelente serviço com profissionais capacitados e os melhores produtos do mercado, marque já um orçamento que iremos resolver seus problemas com limpeza.",
+  "contact": "Fique à vontade para chamar nosso consultor de vendas o número é (41) 99999-9999. Aguardamos seu contato!"
 }
