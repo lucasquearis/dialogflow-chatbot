@@ -15,7 +15,7 @@ app.get("/", (request, response) =>
   response.status(200).json({ Hello: "world!" })
 );
 
-const dialogflowFulfilment = (request, reponse) => {
+const dialogflowFulfilment = (request, response) => {
   const agent = new WebhookClient({ request, response });
 
   function statusPedido(agent) {
