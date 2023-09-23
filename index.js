@@ -11,6 +11,10 @@ app.post("/dialogflow-fulfillment", (request, response) =>
   dialogflowFulfilment(request, response)
 );
 
+app.get("/", (request, response) =>
+  response.status(200).json({ Hello: "world!" })
+);
+
 const dialogflowFulfilment = (request, reponse) => {
   const agent = new WebhookClient({ request, response });
 
@@ -20,8 +24,8 @@ const dialogflowFulfilment = (request, reponse) => {
   }
 
   const intentMap = new Map();
-  intentMap.set("Status Pedido Intent", statusPedido)
-  agent.handleRequest(intentMap)
+  intentMap.set("Status Pedido Intent", statusPedido);
+  agent.handleRequest(intentMap);
 };
 
-app.listen(PORT, () => console.log(`escutando na porta: ${PORT}`))
+app.listen(PORT, () => console.log(`escutando na porta: ${PORT}`));
